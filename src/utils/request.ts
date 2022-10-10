@@ -2,7 +2,7 @@ import axios, {AxiosInstance, AxiosError, AxiosResponse, AxiosRequestConfig} fro
 import { ElMessage } from 'element-plus';
 const service:AxiosInstance = axios.create({
     // baseURL: process.env.NODE_ENV == 'production' ? "https://flora-api.relationshipapp.com/" : process.env.NODE_ENV == 'development' ? "https://flora-staging.relationshipapp.com/" : "https://flora-test.relationshipapp.com/",
-    baseURL: "http://1d13-27-27-88-181.ngrok.io/",
+    baseURL: "https://1d13-27-27-88-181.ngrok.io/",
     timeout: 50000000000000
 });
 
