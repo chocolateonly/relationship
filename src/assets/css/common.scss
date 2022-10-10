@@ -1,0 +1,13 @@
+.top-search{
+  margin-bottom: 20px;
+  .el-form--inline .el-form-item{
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 10px;
+  }
+}
+.pagination{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
