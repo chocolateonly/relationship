@@ -3,7 +3,7 @@ export const usePage = (getList:any) => {
     const query = reactive({
         keyword:'',
         page: 1,
-        page_size: 5,
+        page_size: 20,
         total: 0,
         list: []
     })
@@ -11,14 +11,14 @@ export const usePage = (getList:any) => {
     const goPage = (index:number) => {
         query.page = index
         query.list = []
-        getList()
+        getList(query)
     }
 
     const goInit = () => {
         query.page = 1
         query.total = 0
         query.list = []
-        getList()
+        getList(query)
     }
 
     return {

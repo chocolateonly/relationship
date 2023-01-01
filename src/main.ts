@@ -9,6 +9,7 @@ import { usePermissStore } from './store/permiss'
 import 'element-plus/dist/index.css'
 import './assets/css/icon.css'
 import Plugin from 'v-fit-columns';
+import store from './store'
 
 
 const app = createApp(App)
@@ -18,6 +19,7 @@ app.use(router)
 app.use(ElementPlus, {
     locale: zhCn,
 })
+app.use(store)
 app.use(Plugin);
 // 注册elementplus图标
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {

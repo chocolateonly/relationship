@@ -1,0 +1,31 @@
+{
+    "message": "success!",
+    "status": 200,
+    "data": {
+        "id": "",
+        "department_id": "",
+        "dem_name": "",
+        "education": "",
+        "category": "",
+        "experience": "",
+        "min_age": 0,
+        "max_age": 0,
+        "sex": "",
+        "people_num": 0,
+        "min_salary": "",
+        "max_salary": "",
+        "workplace": "",
+        "requirement": "",
+        "questions": "",
+        "duty": [
+            "",
+            ""
+        ],
+        "created_at": "",
+        "updated_at": "",
+        "create_person": "",
+        "invited": [
+           
+        ]
+    }
+}

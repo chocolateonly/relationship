@@ -74,7 +74,7 @@ import VueCropper from 'vue-cropperjs';
 import 'cropperjs/dist/cropper.css';
 import avatar from '../assets/img/img.svg';
 
-const name = localStorage.getItem('ms_username_relationship');
+const name = localStorage.getItem('ms_cid_userinfo_username');
 const form = reactive({
 	old: '',
 	new: '',

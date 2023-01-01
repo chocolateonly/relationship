@@ -1,11 +1,15 @@
 <template>
 	<div class="header">
-		<div class="logo">RelationShip</div>
     <!-- 折叠按钮 -->
     <div class="collapse-btn" @click="collapseChage">
       <el-icon v-if="sidebar.collapse"><Expand /></el-icon>
       <el-icon v-else><Fold /></el-icon>
     </div>
+		<div class="logo">
+      <el-image :src="Logo" fit="contain" style="width:70px;height: 70px;vertical-align: middle"></el-image>
+      <span>电商CID</span>
+    </div>
+
 		<div class="header-right">
 			<div class="header-user-con">
 				<!-- 用户头像 -->
@@ -20,7 +24,7 @@
 					</span>
 					<template #dropdown>
 						<el-dropdown-menu>
-							<el-dropdown-item command="user">个人中心</el-dropdown-item>
+<!--							<el-dropdown-item command="user">个人中心</el-dropdown-item>-->
 							<el-dropdown-item divided command="loginout">退出登录</el-dropdown-item>
 						</el-dropdown-menu>
 					</template>
@@ -30,12 +34,14 @@
 	</div>
 </template>
 <script setup lang="ts">
-import { onMounted } from 'vue';
+import { computed, onMounted } from 'vue';
 import { useSidebarStore } from '../store/sidebar';
 import { useRouter } from 'vue-router';
 import imgurl from '../assets/img/img.svg';
-
-const username: string | null = localStorage.getItem('ms_username');
+import Logo from '../assets/img/logo-only.svg'
+import { useIndex } from "../store";
+const indexStore = useIndex()
+const username  = computed(()=>indexStore.userinfo.nickname);
 const message: number = 2;
 
 const sidebar = useSidebarStore();
@@ -49,12 +55,15 @@ onMounted(() => {
 		collapseChage();
 	}
 });
-
+const goResume = ()=>{
+  router.push('/newcandidate')
+}
 // 用户名下拉菜单选择事件
 const router = useRouter();
 const handleCommand = (command: string) => {
 	if (command == 'loginout') {
-		localStorage.removeItem('ms_username_relationship');
+		localStorage.removeItem('ms_cid_userinfo_username');
+    localStorage.removeItem('ms_cid_userinfo')
 		router.push('/login');
 	} else if (command == 'user') {
 		router.push('/user');
@@ -81,7 +90,7 @@ const handleCommand = (command: string) => {
 }
 .header .logo {
 	float: left;
-	width: 250px;
+	width: 185px;
 	line-height: 70px;
   text-align: center;
 }

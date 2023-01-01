@@ -9,5 +9,47 @@
 .pagination{
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: flex-end;
+}
+
+
+.common-form .el-form-item__content,.common-form .el-cascader{
+  width:100%;
+}
+.common-form .el-select,.common-form .el-input,.common-form .el-date-picker {
+  width: 100% !important;
+  max-width: 300px !important;
+}
+
+.common-form  .el-input__wrapper {
+  width: 93%
+}
+
+:root{
+  --theme-color:#419df7;
+}
+.theme-color{
+  color: var(--theme-color);
+};
+
+.line1{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+.el-table .cell{
+  white-space: nowrap !important;
+}
+
+
+//safari 表格
+.el-table__header,.el-table__body,.el-table__footer{
+  width: 100%;
+  table-layout: fixed !important;
+}
+
+.el-image{
+  width: 100%;height: 100%
 }

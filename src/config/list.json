@@ -1,0 +1,134 @@
+{
+    "message": "success!",
+    "status": 200,
+    "data": {
+        "sex": [
+            {
+                "value": 0,
+                "text": "女"
+            },
+            {
+                "value": 1,
+                "text": "男"
+            },
+            {
+                "value": "",
+                "text": "未知"
+            }
+        ],
+        "eduction": [
+            {
+                "value": "",
+                "text": "不限"
+            },
+            {
+                "value": "高中及高中以下",
+                "text": "高中及高中以下"
+            },
+            {
+                "value": "大专",
+                "text": "大专"
+            },
+            {
+                "value": "本科",
+                "text": "本科"
+            },
+            {
+                "value": "硕士",
+                "text": "硕士"
+            },
+            {
+                "value": "硕士及硕士以上",
+                "text": "硕士及硕士以上"
+            }
+        ],
+        "talent_type": [
+            {
+                "value": "0",
+                "text": "普通"
+            },
+            {
+                "value": "1",
+                "text": "人才"
+            }
+        ],
+        "experience": [
+            {
+                "value": "",
+                "text": "不限"
+            },
+            {
+                "value": "1~3年",
+                "text": "1～3年"
+            },
+            {
+                "value": "3~5年",
+                "text": "3~5年"
+            },
+            {
+                "value": "5~10年",
+                "text": "5～10年"
+            },
+            {
+                "value": "10年以上",
+                "text": "10年以上"
+            }
+        ],
+        "channel": [
+            {
+                "value": "Boss直聘",
+                "text": "BOSS直聘"
+            },
+            {
+                "value": "51job",
+                "text": "51job"
+            },
+            {
+                "value": "智联招聘",
+                "text": "智联招聘"
+            },
+            {
+                "value": "其他途径",
+                "text": "其他途径"
+            }
+        ],
+        "workplace": [
+            {
+                "value": "上海",
+                "text": "上海"
+            },
+            {
+                "value": "襄阳",
+                "text": "襄阳"
+            },
+            {
+                "value": "广州",
+                "text": "广州"
+            }
+        ],
+        "schedule": [
+            {
+                "value": 1,
+                "text": "待筛选"
+            },
+            {
+                "value": 2,
+                "text": "待安排面试"
+            },
+            {
+                "value": 3,
+                "text": "待入职"
+            }
+        ],
+        "station": [
+            {
+                "value": "人事经理",
+                "text": "人事经理"
+            },
+            {
+                "value": "人事专员",
+                "text": "人事专员"
+            }
+        ]
+    }
+}

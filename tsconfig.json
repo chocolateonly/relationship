@@ -13,6 +13,6 @@
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts","src/**/*.vue"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts","src/**/*.vue", "src/store/recruit.js", "src/store/recruit.js", "src/store/recruit.js"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
